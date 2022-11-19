@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* Variables */
+
+:root{
+    --font-family:"Roboto", sans-serif;
+    --normal-font:400;
+    --bolder-font:700;
+    --bg-color: #000;
+    --primary-color: #f0f8ff;
+    --secondary-color:#4682b4;
+    --line-height: 2rem;
+    --html-color:#04AA6D;
+    --css-color:#2196f3;
+    --js-color:#f44336;
+    
+
+
+}
+/* variables  ends */
+
+/* Css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Css reset ends */
+
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+}
+
+nav h1{
+ font-size: 2rem;
+ color: var(--primary-color);
+ font-weight: var(--bolder-font);
+ margin: 20px;
+ box-shadow: 0 3px 5px var(--secondary-color);
+ text-shadow: 2px 2px var(--secondary-color);
+ padding: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 3% 0 3%;
+}
+
+.navigations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.navigations li{
+    list-style: none;
+    margin: 20px;
+    
+}
+
+.navigations a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: var(--bolder-font);
+   
+}
+
+.navigations a:hover{
+    cursor: pointer;
+    
+    padding: 10px;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    transition: .5s;
+}
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+
+}
+.image img{
+    width: 60%;
+    /* height: 70vh; */
+    margin:auto 20%;
+    border-radius:20% ;
+    margin-top:10% ;
+    margin-left: 5%;
+    
+}
+
+.about-text{
+    /* text-align: center; */
+    color: var(--primary-color);
+    line-height: var(--line-height);
+    padding: 20px;
+    margin-top:5%;
+    /* border: 5px solid white; */
+}
+
+.about-text span{
+    color: var(--secondary-color);
+  
+}
+
+.button button{
+    padding: 10px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-weight: var(--bolder-font);
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.button button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: 0.3s;
+    border: 2px solid var(--primary-color);
+    
+    
+}
+
+.skills{
+    color: var(--primary-color);
+    margin: 10%;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    height: 60vh;
+
+}
+
+.skills h2{
+    padding: 20px;
+}
+
+.skill-percent{
+    background-color: #ddd;
+    width: 100%;
+}
+div p{
+    padding: 15px 0 15px 0;
+    
+}
+.percent{
+    text-align: right;
+    padding: 10px 0 10px 0 ;
+    color: #ddd;
+}
+.html{
+    width: 95%;
+    background-color: var(--html-color);
+}
+
+.css{
+    width: 55%;
+    background-color: var(--css-color);
+}
+
+.js{
+    width: 5%;
+    background-color: var(--js-color);
+}
